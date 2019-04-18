@@ -18,6 +18,10 @@ class NewsPipeline(object):
         if time:
             item['time'] = time.replace('\n', '')
 
+        category = item['category']
+        if category:
+            item['category'] = category.replace('\n', '')
+
         tags = item['tags']
         if tags:
             tags_str = ','.join(tags)

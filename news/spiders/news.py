@@ -22,11 +22,13 @@ class HeadSpider(scrapy.Spider):
             title = response.css('meta[itemprop="description"]').xpath('@content').extract()
 
         time = response.css('time[itemprop = "datePublished"]::text').extract_first()
+        category = response.css('a[class ="subnav-link subnav-link--current-section"]::text').extract_first()
         tags = response.css('a[class = "submeta__link"]::text').extract()
         content = response.css('div[itemprop = "articleBody"]').css('p::text').extract()
 
         item['title'] = title
         item['time'] = time
+        item['category'] = category
         item['tags'] = tags
         item['content'] = content
         yield item

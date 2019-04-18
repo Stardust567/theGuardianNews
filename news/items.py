@@ -11,6 +11,7 @@ class NewsItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
     time = scrapy.Field()
+    category = scrapy.Field()
     tags = scrapy.Field()
     content = scrapy.Field()
 
