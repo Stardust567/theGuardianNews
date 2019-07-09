@@ -1,0 +1,31 @@
+卷 DATA 的文件夹 PATH 列表
+卷序列号为 626B-6DCA
+E:.
+│  news.json
+│  README.md
+│  scrapy.cfg
+│  tree.txt
+│  
+└─news
+    │  items.py
+    │  middlewares.py
+    │  pipelines.py
+    │  settings.py
+    │  __init__.py
+    │  
+    ├─spiders
+    │  │  news.py
+    │  │  __init__.py
+    │  │  
+    │  └─__pycache__
+    │          head.cpython-36.pyc
+    │          news.cpython-36.pyc
+    │          test.cpython-36.pyc
+    │          __init__.cpython-36.pyc
+    │          
+    └─__pycache__
+            items.cpython-36.pyc
+            pipelines.cpython-36.pyc
+            settings.cpython-36.pyc
+            __init__.cpython-36.pyc
+            

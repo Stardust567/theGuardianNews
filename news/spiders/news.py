@@ -13,8 +13,8 @@ class HeadSpider(scrapy.Spider):
     years = [2019]
     months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun',
               'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
-    months = ['jun']
-    dates = range(18, 20)
+    months = ['jul']
+    dates = range(1, 4)
 
     for topic in topics:
         for y in years:

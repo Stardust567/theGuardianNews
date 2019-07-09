@@ -1,11 +1,31 @@
 # theGuardianNews 
 _英文新闻网页爬取_ 
 
-毫无疑问又是个课设的需求，这次用了scrapy框架。
+This is a Scrapy project to scrape news from https://www.theguardian.com/ (英国卫报).
 
-数据来源：英国卫报 https://www.theguardian.com/
+This project uses **Mongodb** as database.
 
-爬取了最近三天的新闻做个小测试，感觉正文会存在些微缺失，大体没什么影响。
+## Extracted data
+This project extracts news, combined with title, time, category, tags and content. The extracted data looks like this sample:
+{
+    "title": "Indonesia: 193m people, 17,000 islands, one big election. Here's what you need to know", 
+    "time": "Mon 15 Apr 2019 ", 
+    "category": "World", 
+    "tags": "Indonesia,Asia Pacific,Joko Widodo,explainers", 
+    "content": "A nation made up of 17,000 islands ..."
+}
 
-（数据存放在主目录下news.json里，请查阅）
+## Spiders
+This project contains two spiders and you can list them using the list command:
+
+`$ scrapy list`
+
+> news
+
+You can learn more about the spiders by going through [my blog]('https://stardust567.github.io/post/b2a.html').
+
+## Running the spiders
+You can run a spider using the scrapy crawl command, such as:
+
+`$ scrapy crawl news`
 
