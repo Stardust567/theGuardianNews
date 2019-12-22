@@ -20,7 +20,7 @@ This project contains two spiders and you can list them using the list command:
 
 > news
 
-You can learn more about the spiders by going through [my blog]('https://stardust567.github.io/post/b2a.html').
+You can learn more about the spiders by going through [my blog](https://stardust567.github.io/post/b2a.html).
 
 ## Running the spiders
 You can run a spider using the scrapy crawl command, such as:
